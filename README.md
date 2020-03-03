@@ -3,14 +3,12 @@ This a sample app for Webview in android.
 
 ## Setup
 - Initialise webview settings:
-
 ```
   webView.setWebViewClient(new CustomWebViewClient());
   webView.setWebChromeClient(new CustomWebChromeClient());
   webView.getSettings().setDomStorageEnabled(true);
   webView.getSettings().setJavaScriptEnabled(true);
 ```
-
 - Check if app has required android runtime permissions:
 ```
   if (PermissionsUtil.hasPermissionsForCall(this)) {
